@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Address book</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="edit-contact-container">
+        <div class="edit-contact">
+            <div>
+                <input type="file" name="image" id="new-image">
+            </div>
+            <div>
+                <input type="text" name="name" id="new-name" placeholder="Contact name">
+                <input type="text" name="email" id="new-email" placeholder="Contact email">
+            </div>
+            <div>
+                <input type="number" name="office-number" id="new-office-number" placeholder="Office number">
+                <input type="number" name="home-number" id="new-home-number" placeholder="Home number">
+            </div>
+            <button type="submit" id="submit-new">Edit</button>
+        </div>
+    </div>
+
+    <header>
+        <span id="title">Address book</span>
+        <div class="actions">
+            <button id="delete-all">Delete all</button>
+            <button id="new">Add</button>
+        </div>
+    </header>
+
+    <div id="add-contact">
+        <form action="">
+            <input type="file" name="image" id="image">
+            <input type="text" name="name" id="name" placeholder="Contact name">
+            <input type="text" name="email" id="email" placeholder="Contact email">
+            <input type="number" name="office-number" id="office-number" placeholder="Office number">
+            <input type="number" name="home-number" id="home-number" placeholder="Home number">
+            <button type="submit" id="submit">ADD</button>
+        </form>
+    </div>
+
+    <div id="contacts">
+        <ul id="contacts-list">
+            <div id="contacts-container">
+            </div>
+        </ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
